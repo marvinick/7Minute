@@ -284,7 +284,7 @@ angular.module('7minWorkout')
             angular.forEach($scope.workoutPlan.exercises, function (exercise) {
                 $scope.exercisesAudio.push({ src: exercise.details.nameSound, type: "audio/wav" });
             });
-            workoutPlanwatch();       //unbind the watch.
+            workoutPlanwatch(); //unbind the watch 
         }
     });
 
@@ -305,7 +305,7 @@ angular.module('7minWorkout')
         if (newValue) {
             if (newValue == $scope.currentExercise.duration / 2 && $scope.currentExercise.details.name != 'rest') {
                 $scope.halfWayAudio.play();
-            }
+            } 
             else if (newValue == $scope.currentExercise.duration - 3) {
                 $scope.aboutToCompleteAudio.play();
             }
